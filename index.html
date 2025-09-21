@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
+
+  <!-- Bootstrap (auto-swapped to RTL by the script below) -->
+  <link id="bootstrap-css"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+  <!-- Icons for the 3-column section -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,133 +19,288 @@
   <!-- Header / Hero Section -->
   <header>
     <div>
-      <!-- Ask Copilot to teach you about `.svg`. 🙂 You'll need to resize the logo with CSS. -->
       <img src="img/intel-header-logo.svg" alt="Intel Logo" />
-      <!-- Main Heading -->
-      <h1>
-        Sustainability Through the Ages
-      </h1>
-
-      <!-- Subheading / Description -->
+      <h1>Sustainability Through the Ages</h1>
       <p>
         Explore Intel's journey through time, discovering how our commitment
-        to innovation has shaped a more sustainable future for technology 
+        to innovation has shaped a more sustainable future for technology
         and our planet.
       </p>
     </div>
   </header>
 
   <!-- Timeline Cards Section -->
-  <section>
+  <section id="timeline">
 
-    <!-- Card 1: 1968 -->
+    <!-- 1968 -->
     <div>
       <h2>1968</h2>
       <h3>Intel Founded</h3>
-      <!-- Add image -->
+      <img class="milestone-img" src="https://imgs.search.brave.com/r1oY_nSd_zEIp0tkjrITU-SL2aHis7V9cj5yrNHJPMg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbGF0/aW51bWRhdGFyZWNv/dmVyeS5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMTYvMDQv/aW50ZWwyLmpwZw" alt="Intel founders and early company documents, 1968">
       <p>
-        Robert Noyce and Gordon Moore rename the newly formed company 
-        NM Electronics to Intel Corporation, laying the foundation for 
+        Robert Noyce and Gordon Moore rename the newly formed company
+        NM Electronics to Intel Corporation, laying the foundation for
         decades of technological innovation.
       </p>
     </div>
 
-    <!-- Card 2: 1971 -->
+    <!-- 1971 -->
     <div>
       <h2>1971</h2>
       <h3>First Microprocessor</h3>
-      <!-- Add image -->
+      <img class="milestone-img" src="https://imgs.search.brave.com/ig6jgh1mglq4UHQDacbfOAAySxzB2QxWZdr1e07S2uM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bWljcm9jaGlwdXNh/LmNvbS9tZWRpYS9T/Y3JlZW5zaG90JTIw/MjAyNC0xMi0xOCUy/MGF0JTIwMy41NS4x/MyVDMyVBMiVDMiVB/RlBNLnBuZw" alt="Intel 4004 microprocessor">
       <p>
-        Intel debuts the 4004, the world's first commercial microprocessor, 
-        igniting the microprocessor revolution and propelling the future 
+        Intel debuts the 4004, the world's first commercial microprocessor,
+        igniting the microprocessor revolution and propelling the future
         of computing devices.
       </p>
     </div>
 
-    <!-- Card 3: 1978 -->
+    <!-- 1978 -->
     <div>
       <h2>1978</h2>
       <h3>8086 Processor</h3>
-      <!-- Add image -->
+      <img class="milestone-img" src="https://imgs.search.brave.com/ILdvXDEQW51JhkeLr0O8my69nsrblqdGHaFBMCAupek/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zZW1p/d2lraS5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjAvMDcv/SW50ZWwtODA4Ni1E/aWUuanBn" alt="Intel 8086 chip on a circuit board">
       <p>
-        Launch of the 8086 processor, establishing the x86 architecture 
+        Launch of the 8086 processor, establishing the x86 architecture
         that drives countless PCs and servers in the modern era.
       </p>
     </div>
 
-    <!-- Card 4: 1985 -->
+    <!-- 1985 -->
     <div>
       <h2>1985</h2>
       <h3>386 Processor</h3>
-      <!-- Add image -->
+      <img class="milestone-img" src="https://imgs.search.brave.com/IiFrOMu28nizdNYx_ZEbTvjKm5PgQSlaKztGT6viPaE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMucmlnaHRvLmNv/bS9pbWFnZXMvMzg2/LXZlcnNpb25zL2Nv/bXBhcS0zODYtdzQw/MC5qcGc" alt="Intel 386 microprocessor closeup">
       <p>
-        Intel introduces the 386 processor with 32-bit architecture, 
-        ushering in a new era of performance and multitasking for 
+        Intel introduces the 386 processor with 32-bit architecture,
+        ushering in a new era of performance and multitasking for
         personal computers.
       </p>
     </div>
 
-    <!-- Card 5: 2006 -->
+    <!-- 2006 -->
     <div>
       <h2>2006</h2>
       <h3>Peak GHG Emissions</h3>
-      <!-- Add image -->
+      <img class="milestone-img" src="https://imgs.search.brave.com/IFC8Q4FdXKv3wkFR7Mwrzedk5LFzUu9EWGEZWW4BQO0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/b3Jmb25saW5lLm9y/Zy9wdWJsaWMvdXBs/b2Fkcy9wb3N0cy9p/bWFnZS8xNzE4Njg5/MTcwX2ltZy1lbWlz/c2lvbnMuanBn" alt="Factory emissions over an industrial area">
       <p>
-        This year marks Intel's highest annual greenhouse gas emissions 
-        for operations. Over subsequent years, Intel invests heavily in 
-        chemical abatement, renewable energy, and energy-efficient 
+        This year marks Intel's highest annual greenhouse gas emissions
+        for operations. Over subsequent years, Intel invests heavily in
+        chemical abatement, renewable energy, and energy-efficient
         manufacturing to reverse this trend.
       </p>
     </div>
 
-    <!-- Card 6: 2020 -->
+    <!-- 2020 -->
     <div>
       <h2>2020</h2>
       <h3>RISE Strategy</h3>
-      <!-- Add image -->
+      <img class="milestone-img" src="https://imgs.search.brave.com/Svl1WB4q8il20pCwoInYCNkA0zLrr6G-N445Mlw-zP8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb252/ZXJnZXRlY2htZWRp/YS5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjAvMDUvSW50/ZWwtU2hhcmVzLUl0/cy1Db3Jwb3JhdGUt/U29jaWFsLVJlc3Bv/bnNpYmlsaXR5LVZp/c2lvbi1mb3ItMjAz/MC05MzB4NTIwLmpw/Zw" alt="RISE sustainability strategy illustration">
       <p>
-        Intel launches its RISE (Responsible, Inclusive, Sustainable, 
-        Enabling) strategy and 2030 goals, aiming to drive industry-wide 
+        Intel launches its RISE (Responsible, Inclusive, Sustainable,
+        Enabling) strategy and 2030 goals, aiming to drive industry-wide
         progress on climate action, water stewardship, and waste reduction.
       </p>
     </div>
 
-    <!-- Card 7: 2022 -->
+    <!-- 2022 -->
     <div>
       <h2>2022</h2>
       <h3>Net-Zero By 2040</h3>
-      <!-- Add image -->
+      <img class="milestone-img" src="https://imgs.search.brave.com/_UQ9lUUKEqe6JhqB5nem-WQWwtS99uLXV0pDLQ6gTEk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dGVubmFudGNvLmNv/bS9jb250ZW50L3Rl/bm5hbnQvZW5fZ2Iv/aG9tZS9ibG9nL25l/dC16ZXJvLTIwNDAt/Y29tbWl0bWVudC9f/amNyX2NvbnRlbnQv/cm9vdC9yZXNwb25z/aXZlZ3JpZF9tYWlu/Ym90dG9tL2ltYWdl/X2NvcHkuaW1nLmpw/ZWcvMTY4MjY5MjEz/NjUxOC9uZXQtemVy/by1ibG9nLWhlYWRl/ci0xMTAweDQwMC5q/cGVn" alt="Net-zero target graphic">
       <p>
-        Intel announces its commitment to achieve net-zero greenhouse 
-        gas emissions (Scope 1 and 2) across its global operations 
+        Intel announces its commitment to achieve net-zero greenhouse
+        gas emissions (Scope 1 and 2) across its global operations
         by 2040, building on years of environmental initiatives.
       </p>
     </div>
 
-    <!-- Card 8: 2023 -->
+    <!-- 2023 -->
     <div>
       <h2>2023</h2>
       <h3>Renewable Electricity</h3>
-      <!-- Add image -->
+      <img class="milestone-img" src="https://imgs.search.brave.com/uH4_e31YbbLGnxQWU6u6VInD8AYm87kkIelrC799XgE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA0LzM2LzExLzQ2/LzM2MF9GXzQzNjEx/NDY1NF9ZWlJIMkx1/YXg5WW91aG5DaVo5/SWxtQWN4R3g5dDJw/SS5qcGc" alt="Wind and solar farm representing renewable electricity">
       <p>
-        The company achieves 99% renewable electricity usage worldwide, 
-        helping to drastically lower carbon emissions and driving progress 
+        The company achieves 99% renewable electricity usage worldwide,
+        helping to drastically lower carbon emissions and driving progress
         toward Intel's long-term sustainability goals.
       </p>
     </div>
 
-    <!-- Card 9: 2024 -->
+    <!-- 2024 -->
     <div>
       <h2>2024</h2>
       <h3>Sustainability Summit</h3>
-      <!-- Add image -->
+      <img class="milestone-img" src="https://imgs.search.brave.com/QszEgKIanPyHbMxqweFuBCe3LhCLZxcVnmiucikZVrk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbHRz/dXN0YWluYWJpbGl0/eXN1bW1pdC5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjUv/MDYvS2FwcGl1c1Bo/b3RvZ3JhcGh5X1N1/c3RhaW5hYmlsaXR5/LVN1bW1pdF8wMDAy/LTEwMjR4NjgxLmpw/Zw" alt="Attendees at Intel’s Sustainability Summit">
       <p>
-        Intel hosts its first Sustainability Summit, uniting suppliers, 
-        government officials, and industry leaders to collaborate on 
+        Intel hosts its first Sustainability Summit, uniting suppliers,
+        government officials, and industry leaders to collaborate on
         next-generation sustainable semiconductor manufacturing.
       </p>
     </div>
+
   </section>
+
   <p>Scroll to view timeline | Hover over cards to learn more!</p>
+
+  <!-- 3-column section -->
+  <section class="container my-5" role="region" aria-labelledby="sustain-cols-title" dir="auto">
+    <h2 id="sustain-cols-title" class="text-center mb-4">RISE Strategy &amp; Global Commitments</h2>
+
+    <div class="row g-4 text-md-start text-center">
+      <article class="col-12 col-md-4">
+        <div class="p-4 bg-primary rounded-4 shadow-sm text-dark h-100">
+          <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-2">
+            <i class="bi bi-bricks fs-3" aria-hidden="true"></i>
+            <h3 class="h5 m-0">Our Mission</h3>
+          </div>
+          <p class="mb-3">Our Responsible, Inclusive, Sustainable, and Enabling strategy guides action on climate, water, and circularity through 2030.</p>
+          <a class="btn btn-outline-primary btn-sm" href="#rise">Learn more <span class="visually-hidden">about the RISE Strategy</span></a>
+        </div>
+      </article>
+
+      <article class="col-12 col-md-4">
+        <div class="p-4 bg-primary rounded-4 shadow-sm text-dark h-100">
+          <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-2">
+            <i class="bi bi-globe2 fs-3" aria-hidden="true"></i>
+            <h3 class="h5 m-0">Commitment</h3>
+          </div>
+          <p class="mb-3">Since 2022 we’ve accelerated programs toward net-zero (Scope 1 &amp; 2) by 2040: renewable electricity, abatement, and efficient facilities.</p>
+          <a class="btn btn-outline-primary btn-sm" href="#commitment">Learn more <span class="visually-hidden">about our global commitment</span></a>
+        </div>
+      </article>
+
+      <article class="col-12 col-md-4">
+        <div class="p-4 bg-primary rounded-4 shadow-sm text-dark h-100">
+          <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-2">
+            <i class="bi bi-droplet fs-3" aria-hidden="true"></i>
+            <h3 class="h5 m-0">Global Impact</h3>
+          </div>
+          <p class="mb-3">We replenish water in stressed basins, expand reuse on-site, and work with suppliers on waste reduction and circular goals.</p>
+          <a class="btn btn-outline-primary btn-sm" href="#water">Learn more <span class="visually-hidden">about water and waste efforts</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Newsletter form -->
+  <section class="container my-5" role="region" aria-labelledby="newsletter-title" dir="auto">
+    <div class="bg-primary-subtle p-4 rounded-4 shadow-sm text-dark">
+      <h2 id="newsletter-title" class="h4 text-center mb-3">Subscribe to Intel’s Sustainability Newsletter</h2>
+
+      <form class="row g-3 justify-content-center needs-validation" novalidate action="#" method="post" aria-describedby="privacyNote">
+        <div class="col-12 col-md-6">
+          <label for="email" class="form-label">Email address</label>
+          <input id="email" name="email" type="email" class="form-control" required inputmode="email" autocomplete="email" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We’ll send occasional updates. Unsubscribe anytime.</div>
+          <div class="invalid-feedback">Please enter a valid email address.</div>
+        </div>
+
+        <div class="col-12 col-md-8">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="yes" id="consent" required>
+            <label class="form-check-label" for="consent">I agree to Intel’s <a href="#" class="link-primary">Privacy Policy</a>.</label>
+            <div class="invalid-feedback">Consent is required.</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 d-grid">
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </div>
+
+        <div class="col-12">
+          <p id="formStatus" class="small text-muted m-0" role="status" aria-live="polite"></p>
+        </div>
+        <p id="privacyNote" class="visually-hidden">Your email is used only for Intel sustainability updates.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-body-tertiary mt-5 py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <small class="text-muted">© 2025 Intel Corporation</small>
+      <ul class="list-inline m-0">
+        <li class="list-inline-item"><a class="link-secondary" href="#">Privacy</a></li>
+        <li class="list-inline-item"><a class="link-secondary" href="#">Terms</a></li>
+        <li class="list-inline-item"><a class="link-secondary" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Form validation + status (demo) -->
+  <script>
+  (() => {
+    'use strict';
+    const form = document.querySelector('form.needs-validation');
+    if (!form) return;
+    form.addEventListener('submit', (e) => {
+      if (!form.checkValidity()) {
+        e.preventDefault(); e.stopPropagation();
+        document.getElementById('formStatus').textContent = '';
+      } else {
+        e.preventDefault();
+        document.getElementById('formStatus').textContent = 'Thanks! Please check your inbox to confirm.';
+        form.reset();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  })();
+  </script>
+
+  <!-- Safe, idempotent RTL/LTR auto-switch -->
+  <script>
+  (function () {
+    const html = document.documentElement;
+    const CSS_ID = 'bootstrap-css';
+    const RTL_SET = new Set(['ar','fa','he','ur','ps','sd','ku','dv']);
+
+    function applyDir(isRTL) {
+      const wantDir = isRTL ? 'rtl' : 'ltr';
+      if (html.dir !== wantDir) html.dir = wantDir;
+
+      const link = document.getElementById(CSS_ID);
+      if (link) {
+        const wantHref = isRTL
+          ? 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css'
+          : 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css';
+        if (link.getAttribute('href') !== wantHref) link.setAttribute('href', wantHref);
+      }
+    }
+
+    function setDirFromLang() {
+      const langAttr = html.getAttribute('lang');
+      const lang = (langAttr || navigator.language || '').split('-')[0].toLowerCase();
+
+      // If the page declares a language, trust it. Otherwise fall back to existing dir or browser language.
+      let isRTL;
+      if (langAttr) {
+        isRTL = RTL_SET.has(lang);
+      } else if (html.hasAttribute('dir')) {
+        isRTL = html.dir === 'rtl';
+      } else {
+        isRTL = RTL_SET.has(lang);
+      }
+      applyDir(isRTL);
+    }
+
+    // Initial apply
+    setDirFromLang();
+
+    // Observe changes to lang/dir (debounced to avoid loops)
+    let ticking = false;
+    new MutationObserver(() => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => { setDirFromLang(); ticking = false; });
+    }).observe(html, { attributes: true, attributeFilter: ['lang','dir'] });
+
+    // Handy console helpers for testing:
+    window.forceRTL = () => { html.lang = 'ar'; html.dir = 'rtl'; setDirFromLang(); };
+    window.forceLTR = () => { html.lang = 'en'; html.dir = 'ltr'; setDirFromLang(); };
+  })();
+  </script>
 </body>
 </html>
